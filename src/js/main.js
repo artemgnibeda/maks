@@ -35,3 +35,13 @@ $('.first-block-header .menu_btn').click(function(){
 $('.mob_menu a').click(function(){
   $('.mob_menu').removeClass('active');
 })
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
+today = mm + '/' + dd + '/' + yyyy;
+$('#today').html(today);
+// $('#today2').html(today-14);
