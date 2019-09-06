@@ -646,7 +646,54 @@ p {
 	}
 }
 
+.not-sale {
+	padding: 60px 0;
+	position: relative;
+	.redarr {
+		position: absolute;
+		right: 120px;
+		top: 0;
+		width: 200px;
+		img {
+			width: 100%;
+		}
+	}
+	p {
+		font-size: 22px;
+		color: #39415b;
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
+}
+
+footer {
+	background-color: #e9e9e9;
+	padding: 10px 0;
+	p {
+		font-style: italic;
+		font-size: 14px;
+		color: #696868;
+		margin-bottom: 5px;
+	}
+}
+
+
+
 /* MEDIA */
+@media screen and (max-width: 1025px){
+	.not-sale .redarr {
+		width: 130px;
+		right: 20px;
+	}
+	.nav-tab-item .nav-item {
+		width: 160px;
+		height: 160px;
+		font-size: 16px;
+	}
+	#nav-tabContent .tab-pane {
+		font-size: 20px;
+	}
+}
 @media screen and (max-width: 991px){
 	.bold, .answear .text, .answear ul li{
 		font-size: 19px;
@@ -702,6 +749,28 @@ p {
 			right: -15px;
 		}
 	}
+	.why {
+		background: none;
+	}
+	.why .d-flex-r img {
+		padding-left: 10px;
+	}
+	.why .d-flex-l img {
+		padding-right: 15px;
+	}
+	.why .d-flex-l,.why .d-flex-r {
+		margin-bottom: 25px;
+	}
+	.hand .hand-text {
+		width: 100%;
+		text-align: left;
+	}
+	.hand .hand-text {
+		margin-bottom: 70px;
+	}
+	.hand .hand-text p {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -717,7 +786,12 @@ p {
 			margin-top: 10px;
 		}
 	}
-
+	.h1 {
+		font-size: 22px;
+	}
+	.not-sale .redarr {
+		display: none;
+	}
 	.first-block-header{
 		flex-direction: column;
 		align-items: flex-start;
@@ -743,5 +817,44 @@ p {
 			width: 30px;
 		}
 	}
-
+	.price-card .info1 {
+		    min-height: 150px;
+	}
+	.price-card  {
+		margin-bottom: 30px;
+	}
+	.not-sale {
+		padding: 30px 0;
+	}
+	.nav-tab-item .nav-tabs {
+		flex-direction: column;
+	}
+	.nav-tab-item .nav-item {
+		border-radius: 0;
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+		span {
+			display: none;
+		}
+	}
+	#nav-tabContent {
+		padding: 20px 15px;
+		margin-top: 30px;
+	}
+	#nav-tabContent img {
+		display: none;
+	}
+	.hand .hand-text {
+		width: 100%;
+		text-align: left;
+		padding-top: 150px;
+	}
+	.hand .hand-text p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.hand .hand-text {
+		margin-bottom: 70px;
+	}
 }
