@@ -32,9 +32,16 @@ body {
     color: #525252;
 }
 
+button, a{
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
 * {
   outline: none;
 }
+
 nav {
   border: 1px solid #606060;
   border-top: none;
@@ -59,6 +66,7 @@ nav {
     }
   }
 }
+
 .menu-header {
   display: flex;
   li {
@@ -75,6 +83,7 @@ nav {
     }
   }
 }
+
 .lang {
   display: flex;
   li {
@@ -94,18 +103,24 @@ nav {
 
 .header-section {
   background-image: url(../img/bg1.jpg);
+	background-size: cover;
   p {
     color: #39415b;
   }
 }
+
 .bold {
   font-weight: bold;
   font-size: 20px;
 }
+
 .first-block-header {
   display: flex;
   align-items: center;
   padding-top: 30px;
+	.menu_btn{
+		display: none;
+	}
   .logo-h {
     width: 220px;
     text-align: center;
@@ -114,6 +129,7 @@ nav {
     }
   }
 }
+
 .borderBottom {
   position: relative;
   top: 12px;
@@ -128,6 +144,39 @@ nav {
 p {
   font-size: 18px;
 }
+
+.mob_menu{
+	position: fixed;
+	transform: translateX(100%);
+	transition: all.2s ease-in-out;
+	right: 0;
+	background-color: #fff;
+	height: 100vh;
+	top: 0;
+	z-index: 10;
+	padding: 20px;
+	&.active{
+		transform: translateX(0%);
+	}
+	ul{
+		padding-left: 0;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		li{
+			list-style-type: none;
+			margin-bottom: 5px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			a{
+				color: #525252;
+			}
+		}
+	}
+}
+
 .second-block-header {
   padding: 60px 0;
   display: flex;
@@ -144,12 +193,12 @@ p {
   }
 }
 
-
 .quiz {
 	margin-bottom: 30px;
 	span {
 		margin-right: 30px;
 		input {
+			cursor: pointer;
 			display: none;
 			&:checked + label:after {
 				opacity: 1;
@@ -157,13 +206,14 @@ p {
 		}
 		label {
 			position: relative;
+			cursor: pointer;
 			&:after {
 				display: inline-block;
 				content: "✓";
 				position: absolute;
 				opacity: 0;
-				left: -2px;
-				font-size: 25px;
+				left: -1px;
+				font-size: 20px;
 				top: -8px;
 			}
 		}
@@ -175,13 +225,37 @@ p {
 			border: 2px solid #39415b;
 			margin-bottom: 0;
 			position: relative;
-
 		}
 
 	}
-
-
 }
+
+.answear {
+	display: none;
+	max-width: 880px;
+	padding-right: 50px;
+	.wrap{
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.text{
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 0;
+	}
+	ul{
+		padding-left: 0;
+		li{
+			color: #39415b;
+			font-size: 20px;
+			line-height: 26px;
+			list-style-type: none;
+		}
+	}
+}
+
 .consult-btn {
 	padding: 10px 20px;
 	font-size: 22px;
@@ -193,6 +267,12 @@ p {
 	border-radius: 5px;
 	outline: inherit;
 }
+
+.consult-btn2{
+	display: none;
+	margin-top: 30px;
+}
+
 .h1 {
 	font-size: 30px;
 	color: #39415b;
@@ -564,4 +644,104 @@ p {
 	.btn {
 		background-color: #ebc53c;
 	}
+}
+
+/* MEDIA */
+@media screen and (max-width: 991px){
+	.bold, .answear .text, .answear ul li{
+		font-size: 19px;
+	}
+	p, body{
+		font-size: 17px;
+	}
+	.second-block-header{
+		.men-img{display: none;}
+		.btn_wrap{
+			text-align: center;
+		}
+		.consult-btn{margin-left: 0;font-size: 19px;}
+	}
+	.first-block-header .logo-h{
+		width: 180px;
+		img {
+ 			width: 60px;
+ 		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.bold, .answear .text, .answear ul li{
+		font-size: 18px;
+	}
+	.second-block-header{
+		padding: 50px 0;
+	}
+	.quiz{
+		margin-bottom: 20px;
+	}
+	.second-block-header .consult-btn{
+		font-size: 18px;
+	}
+	p, body{
+		font-size: 16px;
+	}
+	header{
+		.container{
+			max-width: none;
+		}
+	}
+	.first-block-header .logo-h{
+		width: 130px;
+		img{
+			width: 40px;
+		}
+	}
+	.menu-header li{
+		margin: 0 15px;
+		&::after{
+			right: -15px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	header{
+		display: none;
+	}
+	.first-block-header{
+		position: relative;
+		.menu_btn{
+			position: absolute;
+			right: 0;
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
+	.first-block-header{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.borderBottom::after{
+		width: 100%;
+	}
+	.bold, .answear .text, .answear ul li{
+		font-size: 17px;
+	}
+	.second-block-header{
+		padding: 40px 0;
+	}
+	.second-block-header .consult-btn{
+		font-size: 17px;
+	}
+	p, body{
+		font-size: 15px;
+	}
+	.first-block-header .logo-h{
+		width: auto;
+		img{
+			width: 30px;
+		}
+	}
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -25,11 +25,23 @@
           </nav>
         </div>
       </header>
+      <div class="mob_menu">
+        <ul>
+          <li><a href="">Перезвоните мне</a></li>
+          <li><a href="">Задать вопрос</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Рус</a></li>
+          <li><a href="">Укр</a></li>
+        </ul>
+      </div>
       <div class="container">
       <div class="first-block-header">
         <div class="logo-h">
           <img src="img/logo.png" alt="">
         </div>
+        <button type="button" class="menu_btn" name="button">MENU</button>
         <div class="borderBottom">
           <p class="bold">Сервис онлайн разводов</p>
           <p >Оформите расторжение брака максимально быстро и удобно</p>
@@ -45,38 +57,105 @@
               <div class="quiz">
                 <p>Есть ли от брака дети возрастом до 1-го года или беременность?</p>
                 <span>
-                  <input id="radio" type="radio" name="age" value="1">
+                  <input id="radio" class="first_q1" type="radio" name="age" value="1">
                   <label for="radio"><span></span> Да</label>
                 </span>
                 <span>
-                  <input id="radio2" type="radio" name="age" value="2">
+                  <input id="radio2" class="first_q2" type="radio" name="age" value="2">
                   <label for="radio2"><span></span> Нет</label>
                 </span>
               </div>
               <div class="quiz">
-                <p>Есть ли от брака дети возрастом до 1-го года или беременность?</p>
+                <p>Есть ли от брака несовершеннолетние дети (до 18 лет)?</p>
                 <span>
-                  <input id="radio3" type="radio" name="age2" value="3">
+                  <input id="radio3" type="radio" class="second_q1" name="age2" value="3">
                   <label for="radio3"><span></span> Да</label>
                 </span>
                 <span>
-                  <input id="radio4" type="radio" name="age2" value="4">
+                  <input id="radio4" type="radio" class="second_q2" name="age2" value="4">
                   <label for="radio4"><span></span> Нет</label>
                 </span>
               </div>
               <div class="quiz">
-                <p>Есть ли от брака дети возрастом до 1-го года или беременность?</p>
+                <p>Согласен ли второй супруг на расторжение брака?</p>
                 <span>
-                  <input id="radio5" type="radio" name="age3" value="5">
+                  <input id="radio5" type="radio" class="thirdq_1" name="age3" value="5">
                   <label for="radio5"><span></span> Да</label>
                 </span>
                 <span>
-                  <input id="radio6" type="radio" name="age3" value="6">
+                  <input id="radio6" type="radio" class="thirdq_2" name="age3" value="6">
                   <label for="radio6"> <span></span> Нет</label>
                 </span>
               </div>
-              <div class="">
+              <div class="btn_wrap">
                 <button type="submit" name="button" class="consult-btn">Получите консультацию</button>
+              </div>
+              <div class="answear answear_1">
+                <div class="wrap">
+                  <p class="text">
+                    В случае наличия ребенка возрастом до 1-го года или
+                    беременности от брака, расторжение брака возможно
+                    исключительно в случае:
+                  </p>
+                  <ul>
+                    <li>- признания отцовства ребенка другим лицом;</li>
+                    <li>- наличия спора об отцовстве и совместное разрешение
+                       спора о расторжении брака.</li>
+                  </ul>
+                </div>
+                <div class="wrap">
+                  <p class="text">Кроме того, расторжение брака возможно при совместном
+                  желании супругов и наличии нотариально удостоверенного
+                  договора о способе и порядке содержания ребенка.<br>
+                  Однако, на практике этот вариант практически не применим!</p>
+                </div>
+                <div class="wrap">
+                  <p class="text">Советуем Вам дождаться достижение ребенком 1-го года
+                  и обратиться с иском о расторжении брака в судебном порядке.</p>
+                </div>
+              </div>
+              <div class="answear answear_2">
+                <div class="wrap">
+                  <p class="text">
+                    Расторжение брака в Вашем случае возможно исключительно
+                    в судебном порядке.
+                  </p>
+                </div>
+                <div class="wrap">
+                  <p class="text">
+                    Этот процесс не сложный, его основа сводиться к правильной
+                    подготовке пакета документов и искового заявления.
+                    В дальнейшем 90% споров о расторжении брака разрешается
+                    судами без явки супругов.
+                  </p>
+                </div>
+                <div class="wrap">
+                  <p class="text">
+                    Наша команда с радостью поможет Вам с оформлением
+                    пакета документов и будет сопровождать Вас вплоть
+                    до получения Вами решения суда!
+                  </p>
+                </div>
+              </div>
+              <div class="answear answear_3">
+                <div class="wrap">
+                  <p class="text">Расторжение брака в Вашем случае значительно проще произвести
+                  через Органы регистрации актов гражданского состояния
+                  (ранее - ЗАГС).</p>
+                </div>
+                <div class="wrap">
+                  <p class="text">Для этого обеим супругам достаточно обратиться в любой
+                  отдел регистрации актов граданского состояния.</p>
+                </div>
+                <div class="wrap">
+                  <p class="text">В случае отказа второго супруга пойти в органы регистрации
+                  актов гражданского состояния наша команда с радостью
+                  поможет Вам с оформлением расторжения брака в судебном
+                  порядке!</p>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button type="submit" name="button" class="consult-btn consult-btn2">Оформить расторжение брака</button>
               </div>
           </div>
         </div>
@@ -118,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class=" ">
+      <section class=" " style="display: none;">
         <div class="container border-bt pd-30">
           <div class="h1 text-center">
             ПОРЯДОК РАСТОРЖЕНИЯ БРАКА ЧЕРЕЗ СУД
@@ -148,7 +227,7 @@
           </div>
         </div>
       </section>
-      <section class=" pd-30">
+      <section class=" pd-30" style="display: none;">
         <div class="container border-bt">
           <div class="h1 text-center">
             ЧТО ВХОДИТ В ПАКЕТ ДОКУМЕНТОВ
@@ -172,7 +251,7 @@
         </div>
       </section>
 
-      <section class=" pd-30">
+      <section class=" pd-30" style="display: none;">
         <div class="container border-bt">
           <div class="h1 text-center">
             СУДЕБНЫЙ ЗБОР
@@ -190,10 +269,10 @@
         </div>
       </section>
 
-      <section class=" pd-30">
+      <section class=" pd-30" style="display: none;">
         <div class="container ">
           <div class="h1 text-center">
-            Способы расторжения брака
+            КАК ФОРМИРУЕТСЯ СТОИМОСТЬ ЮРИДИЧЕСКИХ УСЛУГ
           </div>
           <div class="text-content1 variant">
             <div class="d-flex">
@@ -207,7 +286,7 @@
         </div>
       </section>
 
-      <section>
+      <section style="display: none;">
         <div class="container">
           <div class="chart">
             <img src="img/grfik.png" alt="">
@@ -240,7 +319,7 @@
         </div>
       </section>
 
-      <section class="hand">
+      <section class="hand" style="display: none;">
         <img src="img/bgbg.png" alt="">
         <div class="container">
           <div class="hand-text">
@@ -250,7 +329,7 @@
         </div>
       </section>
 
-      <section class="why ">
+      <section class="why " style="display: none;">
         <div class="h1 text-center">
           Как мы работаем
         </div>
@@ -275,7 +354,7 @@
         </div>
       </section>
 
-      <section class="tabs pd-30">
+      <section class="tabs pd-30" style="display: none;">
         <div class="h1 text-center">
           Наши преимущества
         </div>
@@ -310,7 +389,7 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" style="display: none;">
         <div class="h1 text-center">
           ВЫБЕРИТЕ НАИБОЛЕЕ ПОДХОДЯЩИЙ <br>ВАРИАНТ СОТРУДНИЧЕСТВА
         </div>
@@ -381,7 +460,8 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
